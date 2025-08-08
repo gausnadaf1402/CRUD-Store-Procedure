@@ -151,8 +151,6 @@ namespace CRUDStoreProcedure
         private void btndelete_Click(object sender, EventArgs e)
         {
             // Delete Employee
-
-            // Update Employee
             int empid = int.Parse(txtempid.Text);
             con.Open();
             SqlCommand cmd = new SqlCommand("DeleteEmp_SP ", con);
